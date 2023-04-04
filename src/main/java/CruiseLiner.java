@@ -14,4 +14,12 @@ public class CruiseLiner extends Vehicle{
         return String.format("Max speed set to %s knots", speed);
     }
 
+    public String setDestination(){
+        return "Destination set to home";
+    }
+
+    public String setDestination(String destination){
+        return String.format("Destination set to " + destination);
+    }
+
 }

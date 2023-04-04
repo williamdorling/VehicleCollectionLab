@@ -23,4 +23,14 @@ public class CruiseLinerTest {
         assertThat(cruiseLiner.setMaxSpeed(3.7)).isEqualTo("Max speed set to 3.7 knots");
     }
 
+    @Test
+    public void canSetDestinationHome(){
+        assertThat(cruiseLiner.setDestination()).isEqualTo("Destination set to home");
+    }
+
+    @Test
+    public void canSetDestination(){
+        assertThat(cruiseLiner.setDestination("New York")).isEqualTo("Destination set to New York");
+    }
+
 }
