@@ -12,6 +12,10 @@ public class RemoteControlCar implements IDrive {
         this.colour = colour;
     }
 
+    public String drive(double distance){
+        return String.format("%s remote control car drove %sm", this.colour, distance);
+    }
+
     @Override
     public void setPrice(double price) {
         this.price = price;

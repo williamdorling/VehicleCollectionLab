@@ -21,5 +21,10 @@ public class RemoteControlCarTest {
         assertThat(remoteControlCar.getPrice()).isEqualTo(35.0);
     }
 
+    @Test
+    public void canDrive(){
+        assertThat(remoteControlCar.drive(40.5)).isEqualTo("Red remote control car drove 40.5m");
+    }
+
 
 }
