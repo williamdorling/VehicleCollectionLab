@@ -9,7 +9,8 @@ public class VehicleTest {
 
     @BeforeEach
     public void setUp(){
-        vehicle = new Vehicle(VehicleType.LAND, 20, 1000.00, 30000.00, true, false) {
+        vehicle = new Bus(20, 1000.00, 30000.00, true, false,
+                4, false) {
         };
     }
 

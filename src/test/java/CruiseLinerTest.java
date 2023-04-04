@@ -18,4 +18,9 @@ public class CruiseLinerTest {
         assertThat(cruiseLiner.dropAnchor()).isEqualTo("Anchor is now dropped, this boat will no longer move");
     }
 
+    @Test
+    public void canSetMaxSpeed(){
+        assertThat(cruiseLiner.setMaxSpeed(3.7)).isEqualTo("Max speed set to 3.7 knots");
+    }
+
 }

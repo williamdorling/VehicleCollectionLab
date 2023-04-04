@@ -16,4 +16,9 @@ public class BusTest {
     public void canSetAirconTemperature(){
         assertThat(bus.setAirconTemperature(19)).isEqualTo("Temperature set to 19 degrees.");
     }
+
+    @Test
+    public void canSetMaxSpeed(){
+        assertThat(bus.setMaxSpeed(45)).isEqualTo("Max speed set to 45.0 kph");
+    }
 }

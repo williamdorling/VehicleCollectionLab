@@ -13,4 +13,10 @@ public class Bus extends Vehicle{
     public String setAirconTemperature(int temperature){
         return String.format("Temperature set to %s degrees.", temperature);
     }
+
+    @Override
+    public String setMaxSpeed(double speed) {
+        return String.format("Max speed set to %s kph", speed);
+    }
+
 }

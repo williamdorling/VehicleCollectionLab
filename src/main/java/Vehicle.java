@@ -22,6 +22,8 @@ public abstract class Vehicle {
         return this.range * this.occupancy / this.price;
     }
 
+    public abstract String setMaxSpeed(double speed);
+
     public int getOccupancy() {
         return this.occupancy;
     }

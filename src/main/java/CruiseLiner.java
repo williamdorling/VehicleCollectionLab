@@ -10,4 +10,8 @@ public class CruiseLiner extends Vehicle{
         return "Anchor is now dropped, this boat will no longer move";
     }
 
+    public String setMaxSpeed(double speed){
+        return String.format("Max speed set to %s knots", speed);
+    }
+
 }
