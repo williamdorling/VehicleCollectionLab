@@ -1,6 +1,6 @@
+import interfaces.IDrive;
 
-
-public abstract class Vehicle {
+public abstract class Vehicle implements IDrive {
 
     private VehicleType type;
     private int occupancy;
@@ -26,6 +26,14 @@ public abstract class Vehicle {
 
     public int getOccupancy() {
         return this.occupancy;
+    }
+
+    public void setPrice(double price){
+        this.price = price;
+    }
+
+    public double getPrice() {
+        return this.price;
     }
 }
 

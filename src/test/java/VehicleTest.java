@@ -24,4 +24,10 @@ public class VehicleTest {
     public void canGetOccupancy(){
         assertThat(vehicle.getOccupancy()).isEqualTo(20);
     }
+
+    @Test
+    public void canSetPrice(){
+        vehicle.setPrice(25000.0);
+        assertThat(vehicle.getPrice()).isEqualTo(25000.0);
+    }
 }

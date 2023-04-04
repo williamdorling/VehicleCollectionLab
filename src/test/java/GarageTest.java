@@ -21,14 +21,16 @@ public class GarageTest {
     }
 
     @Test
-    public void canCalculateCapacity(){
+    public void canCalculateTotalPrice(){
         Plane plane = new Plane(7,500, 1000000,
                 false, false, true);
         CruiseLiner cruiseLiner = new CruiseLiner(3000, 8000, 500000000,true,
                 false, 20);
+        RemoteControlCar remoteControlCar = new RemoteControlCar(35.5, 50.0, "Blue");
         garage.addToStock(plane);
         garage.addToStock(cruiseLiner);
-        assertThat(garage.calculateCapacity()).isEqualTo(3007);
+        garage.addToStock(remoteControlCar);
+        assertThat(garage.calculateTotalPrice()).isEqualTo(500000000+1000000+50);
     }
 
     @Test

@@ -1,28 +1,30 @@
+import interfaces.IDrive;
+
 import java.util.ArrayList;
 
 public class Garage {
 
-    private ArrayList<Vehicle> stock;
+    private ArrayList<IDrive> stock;
 
 
     public Garage(){
         this.stock = new ArrayList<>();
     }
 
-    public ArrayList<Vehicle> getStock() {
+    public ArrayList<IDrive> getStock() {
         return this.stock;
     }
 
-    public void addToStock(Vehicle newVehicle){
+    public void addToStock(IDrive newVehicle){
         this.stock.add(newVehicle);
     }
 
-    public int calculateCapacity(){
-        int capacity = 0;
-        for (Vehicle vehicle : stock) {
-            capacity += vehicle.getOccupancy();
+    public int calculateTotalPrice(){
+        int price = 0;
+        for (IDrive vehicle : stock) {
+            price += vehicle.getPrice();
         }
-        return capacity;
+        return price;
     }
 
 }
